@@ -1,9 +1,9 @@
 ```markdown
-# Environmental Data Processing Application
+# Mask PointCloud
 
 ## Overview
 
-This Python application is designed for processing environmental data, including filtering point clouds based on a specified mask and visualizing the results. The application uses GeoPandas, Matplotlib, and other libraries to perform various tasks related to environmental data analysis.
+This Python application is designed for processing data, including filtering point clouds based on a specified mask and visualizing the results. The application uses GeoPandas, Matplotlib, and other libraries to perform various tasks related to data analysis.
 
 ## Installation
 
