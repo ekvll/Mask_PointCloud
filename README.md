@@ -36,16 +36,6 @@ python main_script.py -m <mask_name> -i <input_point_cloud> -t -p -P --epsg <eps
 - `-P` or `--Plot`: Plot processed data, including the mask. Note, if the mask is large, the script run time is likely to be very long. If you are using the example mask 'small_mask' it is completely fine to plot with '-P'.
 - `--epsg`: Specify the EPSG code (e.g., 3006 for SWEREF 99 TM).
 
-### Functions
-
-#### `gen_args()`
-
-Generates command-line arguments for the application using argparse.
-
-#### `main(args)`
-
-Main function for processing data. Handles reading mask and point cloud data, preprocessing, filtering, and visualization.
-
 ### Directory Structure
 
 ```plaintext
