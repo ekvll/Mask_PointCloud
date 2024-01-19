@@ -1,4 +1,3 @@
-```markdown
 # Mask PointCloud
 
 ## Overview
@@ -10,7 +9,7 @@ This Python application is designed for processing data, including filtering poi
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/ekvll/your-repo.git
+   git clone https://github.com/ekvll/Mask_PointCloud.git
    cd your-repo
    ```
 
@@ -43,40 +42,27 @@ python main_script.py -m <mask_name> -i <input_point_cloud> -t -p -P --epsg <eps
 
 Generates command-line arguments for the application using argparse.
 
-#### `read_mask(mask_path, target_crs="EPSG:3006")`
-
-Reads the mask GeoDataFrame from a file and ensures it has the correct CRS.
-
-#### `generate_test_point_cloud(mask, settings)`
-
-Generates a test point cloud based on the provided mask and settings.
-
-#### `read_point_cloud(file_path)`
-
-Reads a point cloud from a CSV file.
-
-#### `preprocess_point_cloud(point_cloud, epsg_code)`
-
-Preprocesses the point cloud by creating a GeoDataFrame with Point geometries.
-
 #### `main(args)`
 
-Main function for processing environmental data. Handles reading mask and point cloud data, preprocessing, filtering, and visualization.
+Main function for processing data. Handles reading mask and point cloud data, preprocessing, filtering, and visualization.
 
 ### Directory Structure
 
 ```plaintext
 |-- LICENSE
 |-- README.md
-|-- input
-|   |-- mask
-|   |   |-- coastline.gpkg
-|   |   `-- small_mask.gpkg
-|   `-- point_cloud
-|       |-- test1.csv
-|       `-- test_point_cloud.csv
+|-- data
+|   |-- input
+|   |   |-- mask
+|   |   |   |-- coastline.gpkg
+|   |   |   `-- small_mask.gpkg
+|   |   `-- point_cloud
+|   |       |-- test1.csv
+|   |       `-- test_point_cloud.csv
+|   `-- output
+|       |-- test1_filtered.csv
+|       `-- test_point_cloud_filtered.csv
 |-- main.py
-|-- output
 |-- requirements.txt
 `-- src
     |-- __init__.py
@@ -90,4 +76,3 @@ Main function for processing environmental data. Handles reading mask and point 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
